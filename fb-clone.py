@@ -1,5 +1,9 @@
 import os, sys, re, time, json, random, requests
-from bs4 import BeautifulSoup as parser
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup("<p>Some<b>bad<i>HTML")
+
+print(soup.prettify())
 from concurrent.futures import ThreadPoolExecutor
 
 
